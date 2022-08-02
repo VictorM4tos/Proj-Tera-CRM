@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../components/fonts/static/Rubik-Regular.ttf"),
+    url("../components/fonts/static/Rubik-Medium.ttf"),
+    url("../components/fonts/Rubik-Italic-VariableFont_wght.ttf"),
+    url("../components/fonts/Rubik-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: none;
+}
+
+body {
+  font-family: "Rubik";
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1200px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Lalezar";
+  font-size: 3rem;
+  color: #171d1c;
+}
+
+#title {
+  flex-direction: column;
+  line-height: 10px;
+}
+
+header li {
+  display: inline-block;
+  margin: 20px;
+}
+
+header a:hover {
+  color: #ec4c21;
+}
+
+.login-btn {
+  border: solid 2px #ec4c21;
+  padding: 15px;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  align-content: center;
+  height: 70vh;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 60px;
+}
+
+main aside {
+  max-width: 50%;
+}
+
+main img {
+  max-width: 150%;
+  min-width: 400px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+main p {
+  font-size: 1.5rem;
+  margin-bottom: 8%;
+}
+
+.main-btn {
+  padding: 15px;
+  border: solid #ec4c21 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ec4c21;
+  margin-right: 20px;
+}
+
+#cadastro-btn {
+  background-color: #ec4c21;
+  color: #fff;
+}
+
+#cadastro-btn:hover {
+  background-color: #953116;
+  border: solid #953116 2px;
+}
+
+.parcerias-article {
+  background: #dbdbdb;
+  display: inline-block;
+  height: 30vh;
+  width: 100%;
+}
+
+.parcerias-article ul {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1200px;
+}
+
+footer {
+  background: #171d1c;
+  padding: 15px;
+  height: 300px;
+}
