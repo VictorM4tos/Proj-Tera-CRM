@@ -16,18 +16,17 @@ body {
   padding: 0;
 }
 
-.hero {
-  margin: 0 auto;
-  padding: 15px;
-  max-width: 1200px;
+a:visited {
+  text-decoration: none;
 }
+
+/* ------------------- Header ------------------- */
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
 }
 
 h1 {
@@ -59,6 +58,15 @@ header a:hover {
 
 .login-btn:hover {
   transform: scale(1.05);
+}
+
+/* ------------------- Header ------------------- */
+
+/* ------------------- Hero ------------------- */
+.hero {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1200px;
 }
 
 main {
@@ -116,21 +124,90 @@ main p {
   border: solid #953116 2px;
 }
 
+/* ------------------- Hero ------------------- */
+
+/* ------------------- Parcerias ------------------- */
 .parcerias-article {
   background: #dbdbdb;
-  display: inline-block;
-  height: 30vh;
   width: 100%;
+  padding: 5% 0;
+  display: block;
+  align-items: center;
+}
+
+.parcerias-article {
+  line-height: 80px;
+}
+
+.parcerias-article p {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 50%;
 }
 
 .parcerias-article ul {
   margin: 0 auto;
-  padding: 15px;
+  align-content: center;
   max-width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 50%;
 }
 
+.parcerias-article li {
+  display: inline-block;
+}
+
+.parcerias-article img {
+  width: 50%;
+}
+
+/* ------------------- Parcerias ------------------- */
+
+/* ------------------- Footer ------------------- */
+
 footer {
-  background: #171d1c;
+  background: #000;
   padding: 15px;
-  height: 300px;
+  height: auto;
+  color: #fff;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-content: center;
+  padding-top: 20px;
+  bottom: 15px;
+}
+
+footer .social-icons {
+  align-content: flex-end;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+footer .fa-brands {
+  transform: scale(2.5);
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+
+footer a li:hover {
+  text-decoration: underline;
+  color: rgb(220, 216, 216);
 }
