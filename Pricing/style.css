@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+    
+body
+{
+    background-color: white;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    
+}
+  
+.tabela-preco
+{
+    display: flex;
+    justify-content: space-around;
+    width: min (1600px, 100%);
+    margin: auto;
+}
+
+.card-preco
+{
+    border: 1px solid #0fbcf9;
+    flex:1;
+    max-width: 360px;
+    background-color: white;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+}
+
+.card-preco:hover .card-preco-header
+{
+    box-shadow: 0 0 0 30em #0fbcf9;
+}
+
+.card-preco-header
+{
+    background-color: #0fbcf9;
+    display: flex;
+    color: #fff;
+    padding: 16px 100px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s line;
+}
+
+.preco
+{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0fbcf9;
+    margin: 50px 0;
+    transition: .2s linear;
+}
+.preco h3
+{
+    display: inline-box;
+    font-size: 10px;
+    /*font-weight: 100;*/
+    color: #0fbcf9;
+    margin: 5px 0;
+    transition: .2s linear;
+}
+.preco h3:hover
+{
+    color: #fff;
+}
+
+/*.preco span
+{
+    font-size: 22px;
+    font-weight: 700;
+}*/
+
+.card-preco:hover, .card-preco:hover .preco 
+{
+    color: #fff;
+}
+
+/*.regra
+{
+    font-size: 10px;
+    font-weight: 300;
+    color: #0fbcf9;
+    margin: 50px 0x;
+    transition: .2s linear;
+}*/
+
+/*.regra span
+{
+    font-size: 11px;
+    font-weight: 300;
+    color:blue;
+}*/
+
+/*.regra:hover, .regra:hover .regra
+{
+        color: white;
+
+}*/
+.card-preco li
+{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+}
+
+.btn 
+{
+   display: inline-block;
+   margin-bottom: 40px;
+   margin-top: 80px;
+   border: 2px solid #0fbcf9; 
+   color: #0fbcf9;
+   padding: 18px 40px;
+   border-radius: 8px;
+   text-transform: uppercase;
+   font-weight: 400;
+   transition: .3s linear;
+}
+
+.btn:hover
+{
+    background-color: #0fbcf9;
+    color: white;
+}
+

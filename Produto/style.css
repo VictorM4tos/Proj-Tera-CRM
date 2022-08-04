@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2? família= Aberto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800 & display=trocar');
+
+header {
+    position: fixed;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: open sans, sans-serif;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 80px;
+    padding-top: 15px;
+    z-index: 1;
+    text-align: center;
+    background-color: black;
+    color: rgba(236, 231, 231, 0.726)
+}
+
+.menu-principal{
+    text-align: right;
+    background-color: black
+}
+
+.menu-principal a {
+    padding: 20px;
+    color: #F0F8FF;
+    text-decoration: none;
+
+}
+
+article {
+    box-shadow: 0px 0px 13px -5px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    margin-top: 100px;
+    padding: 15px;
+    height: auto;
+    background-color: white
+}
+
+body {
+    background-color: #F0F8FF;
+    margin: 0;
+    font-family: open sans, sans-serif;    
+}
+
+.texto-kanban {
+    font-weight: bold;
+    font-family: open sans, sans-serif;
+    
+}
+
+#imagem-kanban {
+    width: 100%;
+}
+
+#imagem-midias {
+    width: 100%;
+}
+
+#imagem-email {
+    width: 100%;
+}
+
+#imagem-dashboard{
+    width: 100%;  
+}
+
+.icone-botao{
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    background-color: black;
+}
+
+.texto-footer{
+    color: white;
+    font-size: medium;
+    padding-left: 15px;
+    padding-top: 15px;
+}

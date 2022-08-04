@@ -45,15 +45,23 @@ header li {
   margin: 20px;
 }
 
-header a:hover {
-  color: #ec4c21;
+header h1 a,
+header h1 a:visited {
+  text-decoration: none;
+  color: #171d1c;
 }
-
-.login-btn {
-  border: solid 2px #ec4c21;
+.login-btn,
+.login-btn:visited {
+  border: solid 2px #0fbcf9;
   padding: 15px;
   border-radius: 1rem;
   transition: all 0.5s ease;
+  color: #171d1c;
+}
+
+header a:hover,
+.login-btn:hover {
+  color: #0fbcf9;
 }
 
 .login-btn:hover {
@@ -78,8 +86,8 @@ main {
 }
 
 h2 {
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 3rem;
+  line-height: 2.5rem;
 }
 
 main aside {
@@ -99,29 +107,29 @@ main img {
 }
 
 main p {
-  font-size: 1.5rem;
+  font-size: 150%;
   margin-bottom: 8%;
 }
 
 .main-btn {
   padding: 15px;
-  border: solid #ec4c21 2px;
+  border: solid #0fbcf9 2px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
-  color: #ec4c21;
+  color: #0fbcf9;
   margin-right: 20px;
 }
 
 #cadastro-btn {
-  background-color: #ec4c21;
+  background-color: #0fbcf9;
   color: #fff;
 }
 
 #cadastro-btn:hover {
-  background-color: #953116;
-  border: solid #953116 2px;
+  background-color: #064b64;
+  border: solid #064b64 2px;
 }
 
 /* ------------------- Hero ------------------- */
