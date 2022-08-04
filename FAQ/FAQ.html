@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body{
+            background-color: white;
+            font-family: "Open Sans" , Sans-serif;
+            margin: 0;
+            position: relative;
+            background-color: #F0F8FF;
+        }
+        .OptionMenu{
+            background-color: #ccc;
+            overflow: hidden;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+            border: 30px;
+            text-decoration: none;
+            color: black;
+        }
+        .OptionMenu a{
+            float: right;
+            display: block;
+            color: black;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+        .OptionMenu a:hover{   
+            float: right;
+            display: block;
+            color: #0fbcf9;
+            padding: 14px 50px;
+            background-color: #F0F8FF ;
+            text-decoration: none;
+            transition: 0.8s;
+        }
+        
+        
+        #FAQ{
+            background-color:white;
+            border: 30PX;
+            width: 80%;
+            margin-left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 3%;
+            box-shadow: inset 0 0 black
+
+        }       
+        .Pergunta{
+             background-color: #eee;
+             color: #444;
+             cursor: pointer;
+             padding: 18px;
+             width: 100%;
+             text-align: justify;
+             border: none;
+             outline:none; 
+             border-radius: 2rem;
+             transition: 0.4s;
+             font-size: 20px;            
+        }
+            .active, .Pergunta:hover{
+              background-color: #ccc;
+             color: #444;
+             cursor: pointer;
+             padding: 18px;
+             width: 100%;
+             text-align: justify;
+             border: none;
+             outline: none; 
+             border-radius: 2rem;
+             transition: 0.4s;
+             font-size: 30px;   
+        }
+
+        .resposta{
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            font-size: 17px;
+        }
+        
+        .footer{
+            background-color: #ccc;
+            width: 100%;
+            height: 100px;
+            
+            
+        }
+        .service{
+            text-align: left;
+            text-decoration: none;
+            display: block;
+            justify-items: center;
+            
+        }
+        .crm{
+            text-align: right;
+            text-decoration: none;
+            display: block;
+            justify-items: center;
+
+            
+        }
+    </style>
+        
+</head>
+<body id="body">
+    <head id="menu">
+        <div class="OptionMenu">
+            <a href="" class="login"> Login</a>
+            <a href=""> FAQ</a>
+            <a href=""> Tabela de Preço</a>           
+            <a href="">Funcionalidades</a>
+            
+        </div>
+    </head>
+    <div id="FAQ">
+    <h1 style="text-align: center"> FAQ </h1>
+    <br>
+    <button class="Pergunta"> Quando posso cancelar minha assinatura?</button>
+        <div class="resposta"> 
+            <P >Você pode solicitar o cancelamento a qualquer momento. Quando isso acontecer, você vai nos enviar um aviso prévio de que não possui mais interesse em nossos serviços. Nós vamos cancelar sua assinatura em até 15 dias após o pedido de cancelamento. Isso significa que não é possível cancelar sua conta imediatamente.</P>
+        </div>
+    
+    <button class="Pergunta">O que acontece com meu plano durante o período de cancelamento?</button>
+        <div class="resposta">
+            <p >Toda atividade de faturamento (renovação de plano ou adição de novos usuários) ocorrida no período de 15 dias será devidamente cobrada. Durante este período, você ainda está vinculado ao contrato , bem como às obrigações de pagamento.
+            </p>
+        </div>
+    <button class="Pergunta">Vou perder acesso à minha conta depois que cancelar meu plano?</button>
+        <div class="resposta">   
+            <p >A renovação do seu plano é automática até que o cancelamento seja solicitado. Quando solicitado, não bloqueamos o seu acesso ao sistema. Ele continuará disponível pelo período pago antecipadamente. A única diferença é que o seu plano não será mais renovado.
+            </p>
+        </div>
+    
+    <button class="Pergunta">O que acontece com a minha conta quando meu plano não é mais renovado?</button>
+        <div class="resposta"> 
+             <P>
+                Você não perderá sua conta, e poderá acessar  como conta gratuita (plano Starter). Porém, como este plano possui limitações quanto ao número de membros, automações, condicionais e outras funcionalidades, algumas opções ficarão bloqueadas quando seu plano expirar. 
+                <br>
+                <br>
+                Seus limites serão:
+                <ul>
+                <li>Menos de 5 colunas;</li>
+                <LI>Menos de 10 usuários;</LI>
+                <LI>Menos de 500 registros no database;</LI>
+                <LI>Menos de 50 cards criados a cada 30 dias;</LI>
+                <LI>Apenas uma regra de automação ativa;</LI>
+                <LI>Não possui conexões entre pipes ou entre pipes e databases;</LI>
+                <LI>Não possui condicionais em campos;</LI>
+                <LI>A permissão de todos os membros da empresa deve ser mudada para admin.</LI>
+                </ul>
+                <br>
+                Se você continuar na conta gratuita após o vencimento do seu plano pago, o sistema poderá remover sua organização e/ou membros em até 180 dias.
+                <br>
+                Você também pode solicitar a completa remoção dos dados e usuários da sua empresa.
+            </P>
+        </div>   
+    
+    <button class="Pergunta"> Consigo reembolso?</button>
+        <div class="resposta">   
+            <P >Não. Quando você solicitar a rescisão de contrato, não há reembolso, pois o seu acesso ao sistema ficará disponível até o fim do período contratado. Para entender melhor esse tópico, solicitamos a sua atenção à cláusula 10.1.1 de nossos Termos e Condições.
+            </P>
+        </div>   
+     
+    <button class="Pergunta">Se eu deletar todos os usuários, vou cancelar minha assinatura?</button>
+        <div class="resposta">   
+            <P>
+                Não. Sua conta não será cancelada pela exclusão de todos os usuários; seu plano continuará ativo e sendo cobrado por 1 usuário.
+            </P>
+        </div>
+     
+    <h5 >
+        <p style="text-align: center;">Tem mais dúvidas? Entre em contato com nosso time de suporte pelo chat</p>
+    </h5>
+    </div>
+    <div class="footer">
+        <footer >
+           <div class="service"> <p>2022 Tera de Serviço|Política de Privacidade|Mapa do site</p></div>
+           <div class="crm"><p>O Tera é um CRM de vendas baseado na web</p></div>
+        </footer>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("Pergunta");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+        
+</body>
+</html>

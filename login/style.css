@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../components/fonts/static/Rubik-Regular.ttf"),
+    url("../components/fonts/static/Rubik-Medium.ttf"),
+    url("../components/fonts/Rubik-Italic-VariableFont_wght.ttf"),
+    url("../components/fonts/Rubik-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: none;
+}
 
 * {
   padding: 0;
@@ -7,15 +16,15 @@
   box-sizing: border-box;
 }
 
-a {
-  color: #e64c21;
+.container a {
+  color: #0fbcf9;
   text-decoration: none;
   font-size: 0.8rem;
 }
 
 body,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
@@ -25,15 +34,15 @@ h1 {
 }
 
 .sign-in-form h1 {
-  position: absolute;
-  top: -60%;
-  right: 15%;
+  position: fixed;
+  top: -57%;
+  right: 35%;
 }
 
 .sign-up-form h1 {
   position: absolute;
-  top: -60%;
-  left: 15%;
+  top: -57%;
+  left: 35%;
 }
 
 .container {
@@ -50,7 +59,7 @@ h1 {
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #efd780, #e64c21);
+  background: linear-gradient(-45deg, #0779a3, #0fbcf9);
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
@@ -144,7 +153,7 @@ form.sign-up-form {
   outline: none;
   border-radius: 49px;
   cursor: pointer;
-  background-color: #e64c21;
+  background-color: #0fbcf9;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
@@ -153,7 +162,7 @@ form.sign-up-form {
 }
 
 .btn:hover {
-  background-color: #aa3514;
+  background-color: #064b64;
 }
 
 .google-modal {
@@ -170,7 +179,7 @@ form.sign-up-form {
 }
 
 .google-modal:hover {
-  border: #e64c21 solid 1px;
+  border: #0fbcf9 solid 1px;
 }
 
 .google-modal #google-icon {
@@ -179,20 +188,21 @@ form.sign-up-form {
 
 /* ---- -----*/
 .pp-tc {
+  position: absolute;
   color: #171d1c;
   font-size: 0.8rem;
-  height: 5rem;
   text-align: center;
+  top: 150%;
   margin-bottom: 5px;
 }
 
 .pp-tc a {
-  color: #aa3514;
+  color: #064b64;
   text-decoration: underline;
 }
 
 .pp-tc a:hover {
-  color: #e64c21;
+  color: #0fbcf9;
   cursor: pointer;
 }
 
