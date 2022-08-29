@@ -1,55 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="https://kit.fontawesome.com/afdaaf37ff.js" crossorigin="anonymous"></script>
+
+<!--Favicon-->
 <link rel="icon" type="image/x-icon" href="./components/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="./styles/style.css" />
+<!-- Bootstrap Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- CSS Pessoal-->
+<link rel="stylesheet" href="./styles/style.css" />
 
     <title>Morsa - Landing Page</title>
+
   </head>
   <body>
-    <div class="hero">
-      <header>
-        <div id="title">
-          <h1>Morsa</h1>
-        </div>
+<!------------------ HEADER ------------------>    
 
-        <ul>
-          <a href="Produto/produto.html"><li>Produto</li></a>
-          <a href="Pricing/pricing.html"><li>Preços</li></a>
-          <a href="FAQ/FAQ.html"><li>Dúvidas Frequentes</li></a>
-          <a href="./login/index.html"
-            ><li class="login-btn">Já tem uma Conta?</li></a
-          >
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center align-items-center py-3 border-bottom">
+        <a href="/" class="d-flex mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <h1 class="mx-auto">Morsa</h1>
+        </a>
+  
+        <ul class="nav nav-pills align-items-center">
+          <li class="nav-item mx-auto" ><a href="produto/produto.html" class="nav-link">Features</a></li>
+          <li class="nav-item mx-auto"><a href="pricing/pricing.html" class="nav-link">Preços</a></li>
+          <li class="nav-item mx-auto"><a href="FAQ/FAQ.html" class="nav-link">FAQs</a></li>
+          <li class="nav-item mx-auto"><a href="about/about.html" class="nav-link">Sobre</a></li>
+          <li class="nav-item mx-auto"><a href="./login/index.html" class="nav-link special-btn" aria-current="page">Já tem uma conta?</a></li>
         </ul>
       </header>
-
-      <main>
-        <aside>
-          <h2>Automatize processos em minutos.</h2>
-          <p>
-            Uma plataforma que mantém todo o seu workflow em um só lugar, da
-            maneira mais descomplicada para oferecer uma experiência de sucesso
-            para os seus clientes e a sua empresa.
-          </p>
-          <a id="demo-btn" class="main-btn" href=""
-            >Solicite uma demonstração</a
-          >
-          <a id="cadastro-btn" class="main-btn" href="">Comece Já</a>
-        </aside>
-        <img
-          src="components/imagens/Design stats-amico.svg"
-          alt="Ilustração isométrica de uma moça utilizando um tablet para ver uma Dashboard"
-        />
-      </main>
     </div>
-    <article class="parcerias-article">
+
+<!------------------ fim de HEADER ------------------>    
+
+<!--------------------- HERO ----------------------->
+      <div class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="components/imagens/Design stats-amico.svg" class="d-block mx-lg-auto img-fluid img-float" alt="Ilustração isométrica de uma moça utilizando um tablet para ver uma Dashboard" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold lh-1 mb-3">Automatize processos em minutos.</h2>
+            <p class="lead">Uma plataforma que mantém todo o seu workflow em um só lugar, da
+              maneira mais descomplicada para oferecer uma experiência de sucesso
+              para os seus clientes e a sua empresa.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn button-type-1 button-type-1-style btn-lg">Solicite uma demonstração</button>
+              <button type="button" class="btn button-type-1 btn-lg me-md-2">Comece Já</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--------------------- fim de HERO ----------------------->
+
+<!--------------- PARCERIAS ----------------->
+
+    <article class="parcerias-article mb-8 py-8">
       <div>
       <p>Recomendado por:</p>
-      <ul>
+      <ul class="pb-5">
         <li>
           <img
             src="components/imagens/fake-logos/uilogos[PNG-600x600px]/logomark/black/muszica.png"
@@ -74,26 +89,207 @@
       </ul>
     </article>
 
+<!--------------- fim de PARCERIAS ----------------->
 
-    <footer>
-<hr>
-<div class="content">
-  <ul id="social-icons">
-  <a href=""><li><i class="fa-brands fa-square-facebook"></i></li></a>
-  <a href=""><li><i class="fa-brands fa-linkedin"></i></li></a>
-  <a href=""><li><i class="fa-brands fa-square-twitter"></i></li></a>
-</ul>
+<!----------------- COMO USAR -------------------->
+<div class="container">
+  <h2 class="text-center">Como usar o Morsa em 3 passos</h2>
+
+    <div class="row featurette py-5">
+      <div class="col-md-7">
+        <h3 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h3>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    
+    <div class="row featurette py-5">
+      
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+      <div class="col-md-7">
+        <h3 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h3>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+  
+    </div>
+
+    <div class="row featurette py-5">
+      <div class="col-md-7">
+        <h3 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h3>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+  </div>
+<!----------------- FIM DE COMO USAR -------------------->
+
+<!--------------------TESTIMONIALS------------------->
+<div class="bg-gray py-1">
+<div class="container my-5">
+<div>
+<h3 class="text-center py-3">O que nossos clientes falam sobre nós:</h3>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-img" style="
+      background-image: url(./components/imagens/quem-utiliza/pexels-fauxels-3184611.jpg); background-position: 0 10%;">
+      </div>
+      <div class="container carousel-container">
+        <div class="carousel-caption">
+          <p>A plataforma permite nos manter sempre conectados e engajados com o nosso público alvo, e ter uma vantagem de preferência para futuras possibilidades no mercado.</p>
+          <h4>Lucas Maio, Redator UX na Zig Consultorias.</h4>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-img" style="
+      background-image: url(./components/imagens/quem-utiliza/pexels-emmy-e-238.jpg); background-position: 0 25%;">
+      </div>
+      <div class="container carousel-container">
+        <div class="carousel-caption">
+          <p>Com a Morsa, conseguimos monitorar os nossos negócios da nossa sede na Espanha, e expandir em novos espaços no mercado latino de motos.</p>
+          <h4>Saoko Papi, Gerente de vendas na Motomami.</h4>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-img" style="
+      background-image: url(./components/imagens/quem-utiliza/pexels-andrea-piacquadio-3760263.jpg);">
+      </div>
+      <div class="container carousel-container">
+        <div class="carousel-caption">
+          <p>Nós customizamos a nossa plataforma de acordo com as nossas necessidades. A melhor parte é a simplicidade da automação.</p>
+          <h4>Theodor Maresia, Analista de Marketing na UFOs.</h4>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-img" style="
+      background-image: url(./components/imagens/quem-utiliza/pexels-mentatdgt-1266193.jpg); 
+     background-position: center;">
+      </div>
+      <div class="container carousel-container">
+        <div class="carousel-caption">
+          <p>Com um funil de vendas bem definido, expandimos a presença da nossa marca. Em apenas seis anos, fomos de uma pequena start up de duas pessoas para uma multinacional que domina o mercado em todos os continentes.</p>
+          <h4>Dayane Tagariana, Gestora de Vendas na Target & Ryen Co.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+<!--------------- fim de TESTIONALS -------------->
+
+<!---------- SOLICITE DEMONSTRAÇÃO ----------------->
+<div class="px-4 py-5">
+<div class="container">
+<div class="d-flex justify-content-between py-5 align-items-center">
+  <div>
+  <p class="text-uppercase">Comece hoje mesmo</p>
+  <h3>Transforme seu trabalho com Morsa</h3>
+  </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <button type="button" class="btn button-type-1 button-type-1-style">Fale com um especialista</button>
+      <button type="button" class="btn button-type-1 me-md-2 py-2">Teste grátis</button>
+    </div>
+</div>
+</div>
+</div>
+<!---------- fim de SOLICITE DEMONSTRAÇÃO ----------------->
+
+<!------------- FOOTER ---------->
+
+<div class="bg-dark text-secondary px-4 py-5">
+<div class="container">
+  <footer class="pt-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Ainda não conhece a Morsa?</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Por que a Morsa?</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">O que é CRM?</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Histórias de sucesso de clientes</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Edições e Preços</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Explorar todos os produtos</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Sobre a Morsa</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nossa história</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carreiras</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ser um Trailblazer</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Links populares</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Informações Legais</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Termos de Serviços</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidade</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contato</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookie Preferences</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Inscreva-se na nossa newsletter</h5>
+          <p>Notícias mensais de tudo que é importante, para se manter antenado em todas novidades para o seu negócio.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="email@email.com">
+            <button class="btn button-type-1 button-type-1-style py-1" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+      <p>© 2022 Company Morsa, Inc. <a>Todos os direitos reservados</a></p>
+      <ul class="list-unstyled d-flex align-items-center">
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter"></i><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
 </div>
 
-      <div class="content">
-      <ul>
-        <li>&copy; Morsa 2022</li>
-        <a href="#"><li>Termos de uso</li></a>
-        <a href="#"><li>Política de privacidade</li></a>
-      </ul>
-
-      <p>Morsa is a Web-based Sales CRM.</p>
-      </div>
-    </footer>
+<!------------- FIM DO FOOTER ---------------->
   </body>
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>
