@@ -1,129 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #body{
-            background-color: white;
-            font-family: "Open Sans" , Sans-serif;
-            margin: 0;
-            position: relative;
-            background-color: #F0F8FF;
-        }
-        .OptionMenu{
-            background-color: #ccc;
-            overflow: hidden;
-            position: sticky;
-            z-index: 2;
-            top: 0;
-            border: 30px;
-            text-decoration: none;
-            color: black;
-        }
-        .OptionMenu a{
-            float: right;
-            display: block;
-            color: black;
-            padding: 14px 50px;
-            text-decoration: none;
-        }
-        .OptionMenu a:hover{   
-            float: right;
-            display: block;
-            color: #0fbcf9;
-            padding: 14px 50px;
-            background-color: #F0F8FF ;
-            text-decoration: none;
-            transition: 0.8s;
-        }
-        
-        
-        #FAQ{
-            background-color:white;
-            border: 30PX;
-            width: 80%;
-            margin-left: 50%;
-            transform: translate(-50%);
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            padding: 3%;
-            box-shadow: inset 0 0 black
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        }       
-        .Pergunta{
-             background-color: #eee;
-             color: #444;
-             cursor: pointer;
-             padding: 18px;
-             width: 100%;
-             text-align: justify;
-             border: none;
-             outline:none; 
-             border-radius: 2rem;
-             transition: 0.4s;
-             font-size: 20px;            
-        }
-            .active, .Pergunta:hover{
-              background-color: #ccc;
-             color: #444;
-             cursor: pointer;
-             padding: 18px;
-             width: 100%;
-             text-align: justify;
-             border: none;
-             outline: none; 
-             border-radius: 2rem;
-             transition: 0.4s;
-             font-size: 30px;   
-        }
+<!--Favicon-->
+<link rel="icon" type="image/x-icon" href="../components/favicon/favicon-16x16.png">
 
-        .resposta{
-            padding: 0 18px;
-            background-color: white;
-            display: none;
-            overflow: hidden;
-            font-size: 17px;
-        }
-        
-        .footer{
-            background-color: #ccc;
-            width: 100%;
-            height: 100px;
-            
-            
-        }
-        .service{
-            text-align: left;
-            text-decoration: none;
-            display: block;
-            justify-items: center;
-            
-        }
-        .crm{
-            text-align: right;
-            text-decoration: none;
-            display: block;
-            justify-items: center;
+<!-- Bootstrap Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-            
-        }
-    </style>
-        
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- CSS Pessoal-->
+<link rel="stylesheet" href="../styles/style.css" />
+
+    <title>Morsa - Landing Page</title>
+   
 </head>
 <body id="body">
-    <head id="menu">
-        <div class="OptionMenu">
-            <a href="" class="login"> Login</a>
-            <a href=""> FAQ</a>
-            <a href=""> Tabela de Preço</a>           
-            <a href="">Funcionalidades</a>
-            
-        </div>
-    </head>
+
+<!------------------ HEADER ------------------>    
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center align-items-center py-3 border-bottom">
+      <a href="/" class="d-flex mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <h1 class="mx-auto">Morsa</h1>
+      </a>
+
+      <ul class="nav nav-pills align-items-center">
+        <li class="nav-item mx-auto" ><a href="../Produto/produto.html" class="nav-link">Features</a></li>
+        <li class="nav-item mx-auto"><a href="../Pricing/pricing.html" class="nav-link">Preços</a></li>
+        <li class="nav-item mx-auto"><a href="../index.html" class="nav-link">FAQs</a></li>
+        <li class="nav-item mx-auto"><a href="../about/about.html" class="nav-link">Sobre</a></li>
+        <li class="nav-item mx-auto"><a href="../login/index.html" class="nav-link special-btn" aria-current="page">Já tem uma conta?</a></li>
+      </ul>
+    </header>
+  </div>
+
+<!------------------ fim de HEADER ------------------> 
+
+<!------------------ Início Body ------------------> 
     <div id="FAQ">
     <h1 style="text-align: center"> FAQ </h1>
     <br>
@@ -184,29 +103,80 @@
         <p style="text-align: center;">Tem mais dúvidas? Entre em contato com nosso time de suporte pelo chat</p>
     </h5>
     </div>
-    <div class="footer">
-        <footer >
-           <div class="service"> <p>2022 Tera de Serviço|Política de Privacidade|Mapa do site</p></div>
-           <div class="crm"><p>O Tera é um CRM de vendas baseado na web</p></div>
-        </footer>
-    </div>
 
-    <script>
-        var acc = document.getElementsByClassName("Pergunta");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-    </script>
+    <!------------------ fim Body ------------------> 
+
+    <!------------------ Início JS ------------------>
+    <script src="index.js"> </script>
+    <!------------------ fim JS ------------------>  
+    
+    <!------------- FOOTER ---------->
+
+<div class="bg-dark text-secondary px-4 py-5">
+    <div class="container">
+      <footer class="pt-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Ainda não conhece a Morsa?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Por que a Morsa?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">O que é CRM?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Histórias de sucesso de clientes</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Edições e Preços</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Explorar todos os produtos</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Sobre a Morsa</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nossa história</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Carreiras</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ser um Trailblazer</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Links populares</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Informações Legais</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Termos de Serviços</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidade</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contato</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookie Preferences</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Inscreva-se na nossa newsletter</h5>
+              <p>Notícias mensais de tudo que é importante, para se manter antenado em todas novidades para o seu negócio.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="email@email.com">
+                <button class="btn button-type-1 button-type-1-style py-1" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+          <p>© 2022 Company Morsa, Inc. <a>Todos os direitos reservados</a></p>
+          <ul class="list-unstyled d-flex align-items-center">
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter"></i><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+</div>
+    
+    <!------------- FIM DO FOOTER ---------------->
+
+
         
 </body>
 </html>
